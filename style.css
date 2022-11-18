@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-size: 30px;
+    color: whitesmoke;
+    margin-top: 50px;
+}
+.main{
+    background-color: #E3E7F1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: #8186D5;
+    width: 80%;
+    height: 90vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:  10px 10px 50px hsl(0, 6%, 23%);
+}
+.input-field{
+    margin-top: 50px;
+    background-color: #C6CBEF;
+    border-radius: 10px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+.input-box{
+    padding: 20px;
+}
+.input-box input{
+    height: 25px;
+    width: 300px;
+    border: 2px solid #8186D5;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+input:focus{
+    width: 350px;
+    transition: 0.8s ease;
+    outline: none;
+}
+#submit{
+    border: 2px solid #8186D5;
+    height: 27px;
+    padding: 3px 20px;
+    border-radius: 5px;
+}
+
+#submit:hover{
+    width:120px;
+    cursor: pointer;
+    background-color: #8186D5;
+    color: whitesmoke;
+    transition: 0.3s ease;
+}
+.error{
+    background-color: #ff7c7c;
+    max-width: 300px;
+    position: fixed;
+    top: 138px;
+    left: 37%;
+    transform: translateX(50%);
+    margin: auto;
+    z-index: 6;
+    border-radius: 5px;
+    visibility: hidden;
+    transition: all 0.8s ease-in;
+}
+
+#error{
+    color: white;
+    padding: 3px;
+}
+
+.error.show{
+    visibility: visible;
+    transform: translateX(-150%);
+}
+
+.link-container{
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.link-container .link{
+    border: #C6CBEF 1px solid;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 580px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+}
+
+.link .long__link{
+    color: whitesmoke;
+    margin-left: 1rem;
+}
+
+.link .short__link{
+    display: flex;
+    justify-content: center;
+}
+
+.link .copy__btn{
+    background-color: whitesmoke;
+    padding: 3px 2px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.link .copy__btn:hover{
+    background-color: #C6CBEF;
+    transition: 0.3s ease;
+}

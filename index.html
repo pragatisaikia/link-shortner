@@ -8,22 +8,35 @@
     <title>Shortner</title>
 </head>
 <body>
-    <div class="container">
-        <p>Shorten your links for convenience!</p>
-        <div class="error">
-            <span id="error">You must have entered an invalid url</span>
-        </div>
-        <form>
-            <div class="input-field">
-                <div class="input box">
-                    <input type="text" id="url" placeholder="Enter the url">
-                    <button id="submit">Shorten it!</button>
+    <div class="main">
+
+        <div class="container">
+            <p>Shorten your links for convenience!</p><br>
+            <div class="error">
+                <span id="error">You must have entered an invalid url</span>
+            </div>
+            <form>
+                <div class="input-field">
+                    <div class="input-box">
+                        <input type="text" id="url" placeholder="Enter the url">
+                        <button id="submit">Shorten it!</button>
+                    </div>
+                </div>
+            </form>
+    
+            <div class="link-container">
+                 <div class="link">
+                    <span class="long__link">www.hello.com</span>
+                    <span class="short__link">http://sho/link/j8t5</span>
+                    <button class="copy__btn">Copy</button>
+                </div> 
+    
+               <div class="link">
+                    <span class="long__link">www.bye.com</span>
+                    <span class="short__link">http://sho/link/7hk9</span>
+                    <button class="copy__btn">Copy</button>
                 </div>
             </div>
-        </form>
-
-        <div class="link-container">
-
         </div>
     </div>
     <script src="main.js"></script>
